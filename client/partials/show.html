@@ -1,0 +1,14 @@
+<a href="#/home">HOME</a> | <a href="#/question/{{question._id}}/new_answer">Answer this question</a>
+
+<h2>{{question.content}}</h2>
+<h3>{{question.description}}</h3>
+<hr>
+
+<div ng-repeat="answer in answers">
+  <p>{{answer.username}}:</p>
+  <p><b>{{answer.answer}}</b></p>
+  <p>{{answer.detail}}</p>
+  <p>{{answer.like}} likes</p>
+  <button><a href="#/like/{{answer._id}}">LIKE</a></button>
+  <hr>
+</div>

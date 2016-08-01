@@ -1,0 +1,8 @@
+<h2>New Question</h2>
+<a href="#/home">Home</a>
+<form>
+Question: <textarea ng-model="question.content" rows="8" cols="40"></textarea><br>
+Description(optional): <textarea ng-model="question.description" rows="8" cols="40"></textarea>
+<input type="submit" value="Cancel" ng-click="cancelCreation()">
+<input type="submit" value="Submit" ng-click="createQuestion()">
+</form>

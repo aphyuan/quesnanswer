@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app = 'app'>
+<head>
+	<title>Mean Friend</title>
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src = "app.js"></script>
+		<!-- controllers -->
+    <script src = "/controllers/indexController.js"></script>
+    <script src = "/controllers/homeController.js"></script>
+		<script src = "/controllers/newController.js"></script>
+		<script src = "/controllers/showController.js"></script>
+		<script src = "/controllers/answerController.js"></script>
+		<script src = "/controllers/likeController.js"></script>
+
+		<!-- factories -->
+    <script src = "/factories/mainFactory.js"></script>
+
+</head>
+<body>
+	<div class = 'container'>
+		<!--
+		this is where our partials will be loaded.
+		treat this index.html file like a template. Stuff that could go in here
+		is like a general navbar and footer.
+		 -->
+		<div ng-view></div>
+	</div>
+</body>
+</html>
